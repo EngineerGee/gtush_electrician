@@ -19,9 +19,14 @@ section {
 
 /* Header & Navigation */
 header {
-  background-color: #004aad;
+ background-color: #004aad;
   color: white;
-  padding: 20px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative
 }
 
 .logo-title {
@@ -48,20 +53,27 @@ header {
   font-size: 4rem;
   color: white;
   margin: 0;
-  text-align: left;
+  text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.menu-toggle {
-  display: none;
+  white-space: nowrap; /* ✅ Prevents line breaks */
 }
 
 nav {
-  margin-top: 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   gap: 2rem;
+  position: absolute;
+  bottom: 10px; /* Adjust distance from bottom of header */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(245, 243, 243, 0.1); /* light transparent white */
+  padding: 10px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(2px); /* Optional: softens background under nav */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* soft drop shadow */
+  z-index: 5;
+
 }
 
 nav a {
@@ -76,21 +88,21 @@ nav a.active {
 
 /* Mobile Navigation Toggle */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  .site-title {
     font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    z-index: 10;
+    text-align: center;
+  }
+  
+  .logo-title {
+    flex-direction: column;
+    align-items: center;
   }
 
   nav {
-    display: none;
+    order: 2;  /* ensure it comes after the title in flow */
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   nav.show {
