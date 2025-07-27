@@ -33,8 +33,7 @@
             <div class="title-center">
                 <h1 class="site-title">GTUSH Electrician⚡</h1>
             </div>
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        </div>
+            <!--<button class="menu-toggle" onclick="toggleMenu()">☰</button> -->
         <nav id="navbar">
             <a href="#home" onclick="showSection('home', event)">Home</a>
             <a href="#about" onclick="showSection('about', event)">About</a>
@@ -43,6 +42,7 @@
             <a href="#posts" onclick="showSection('posts', event)">Posts</a>
             <a href="#contact" onclick="showSection('contact', event)">Contact</a>
         </nav>
+        </div>
     </header>
 
     <section id="home" style="display: block;" class="home">
@@ -212,12 +212,12 @@
         <p>&copy; 2025 Gerald Mulwa | All rights reserved</p>
     </footer>
     <script src="script.js"></script>
-    <script>
+    <!--<script>
         function toggleMenu() {
             const nav = document.getElementById('navbar');
             nav.classList.toggle('show');
         }
-    </script>
+    </script>-->
     <script>
         function showSection(sectionId, event) {
             const sections = document.querySelectorAll("section");
