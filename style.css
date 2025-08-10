@@ -61,7 +61,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   position: absolute;
   bottom: 10px; /* Adjust distance from bottom of header */
   left: 50%;
@@ -513,4 +513,5 @@ footer {
 .post-card img:hover {
   transform: scale(1.05);
 }
+
 
