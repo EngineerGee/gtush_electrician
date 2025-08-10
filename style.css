@@ -124,7 +124,7 @@ nav a.active {
     justify-content: center;
     width: 100%;
     background-color: #004aad; /* Optional background */
-    padding: 10px 0;
+    padding: 5px 0;
     z-index: 10;
     position: relative;
   }
@@ -513,3 +513,4 @@ footer {
 .post-card img:hover {
   transform: scale(1.05);
 }
+
