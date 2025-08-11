@@ -401,14 +401,13 @@ nav a.active {
   text-decoration: underline;
 }
 
-/* Gallery */
+/* Gallery
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
 }
-
 .gallery-item {
   background: #f8f8f8;
   border-radius: 10px;
@@ -416,16 +415,15 @@ nav a.active {
   text-align: center;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
-
 .gallery-item img {
   width: 100%;
   display: block;
 }
-
 .gallery-item p {
   padding: 10px;
   font-size: 0.95rem;
 }
+*/
 
 /* Posts */
 .post-card {
@@ -536,5 +534,6 @@ footer {
 .post-card img:hover {
   transform: scale(1.05);
 }
+
 
 
