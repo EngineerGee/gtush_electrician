@@ -37,7 +37,6 @@
         <nav id="navbar">
             <a href="#home" onclick="showSection('home', event)">Home</a>
             <a href="#about" onclick="showSection('about', event)">About</a>
-            <a href="#gallery" onclick="showSection('gallery', event)">Gallery</a>
             <a href="#testimonials" onclick="showSection('testimonials', event)">Testimonials</a>
             <a href="#posts" onclick="showSection('posts', event)">Posts</a>
             <a href="#contact" onclick="showSection('contact', event)">Contact</a>
@@ -153,23 +152,6 @@
             </div>
         </div>
     </section>
-    <section id="gallery" style="display: none;">
-        <h2>Gallery of my work</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/panel1.jpg" alt="Clean circuit breaker panel" />
-                <p>Clean and well organised circuit breaker panel</p>
-            </div>
-            <div class="gallery-item">
-                <img src="images/wiring2.jpg" alt="Wiring during construction" />
-                <p>Construction site electrical wiring work</p>
-            </div>
-            <div class="gallery-item">
-                <img src="images/cctv1.jpg" alt="CCTV installation" />
-                <p>Installed CCTV system with rooftop wiring</p>
-            </div>
-        </div>
-    </section>
     <section id="posts" style="display: none;">
         <h2>My latest Electrical Projects</h2>
         <div class="post-card">
@@ -194,6 +176,18 @@
                 <a href="#" class="read-more" onclick="toggleReadMore(event, this)">Read more</a>
             </p>
         </div>
+            <div class="post-card">
+                <img src="images/panel1.jpg" alt="Clean circuit breaker panel" />
+                <p>Clean and well organised circuit breaker panel</p>
+            </div>
+            <div class="post-card">
+                <img src="images/wiring2.jpg" alt="Wiring during construction" />
+                <p>Construction site electrical wiring work</p>
+            </div>
+            <div class="post-card">
+                <img src="images/cctv1.jpg" alt="CCTV installation" />
+                <p>Installed CCTV system with rooftop wiring</p>
+            </div>
     </section>
     <section id="contact" style="display:none;" class="contact">
         <h2>Contact Me</h2>
@@ -303,3 +297,4 @@
 </body>
 
 </html>
+
